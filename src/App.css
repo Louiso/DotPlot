@@ -31,7 +31,7 @@ header {
     display: block;
     border: 0;
     padding: 10px;
-    width: 50%;
+    width: 80%;
     margin: auto;
     transition: 1s ease;
     background-color: #ce5f33e5; }
@@ -41,6 +41,11 @@ header {
   .card button:active {
     outline: none;
     background-color: red;
+  }
+  .card input{
+    width: 80%;
+    display: block;
+    margin: auto;
   }
 
 #compatibilidad {

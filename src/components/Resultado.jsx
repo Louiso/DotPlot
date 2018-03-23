@@ -13,7 +13,13 @@ class Resultado extends Component {
         const { yo, ella } = this.props.store;
         
         context.clearRect(0,0,600,250);
-        const block = 1;
+        const WIDTH = 300;
+        let block;
+        if(yo.length>ella.length){
+            block = WIDTH/yo.length;
+        }else{
+            block = WIDTH/ella.length;
+        }
         if(ella && yo){
             for(let i = 0 ; i < yo.length; i++){
                 for(let j = 0; j < ella.length ; j++){
@@ -34,7 +40,7 @@ class Resultado extends Component {
     render() {
         let mostrar = '';
         const { resultado, yo, ella } = this.props.store;
-        console.log(ella,yo);
+        // console.log(ella,yo);
         if(resultado){
             mostrar = 'activo';
         }
