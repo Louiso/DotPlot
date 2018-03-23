@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500");
+* {
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #3c3d3f;
+  font-weight: 100; }
+
+header {
+  padding: 15px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(189, 47, 47, 0.87); }
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative; }
+
+.card {
+  width: 40%;
+  margin: 5%;
+  float: left; }
+  .card textarea {
+    display: block;
+    margin: auto; }
+  .card button {
+    display: block;
+    border: 0;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    transition: 1s ease;
+    background-color: #ce5f33e5; }
+  .card button:hover {
+    color: white;
+    background-color: #964728e5; }
+  .card button:active {
+    outline: none;
+    background-color: red;
+  }
+
+#compatibilidad {
+  display: block;
+  border: none;
+  margin: auto;
+  width: 200px;
+  padding: 15px;
+  background-color: rgba(189, 47, 47, 0.87);
+  color: white; }
+
+#resultado {
+  position: absolute;
+  width: 60%;
+  height: 350px;
+  background-color: red;
+  top: 50%;
+  left: -45%;
+  transform: translate(-50%, -50%);
+  transition: 1.5s ease; }
+
+#resultado.activo {
+  left: 50%; }
+
+#canvas{
+  border: solid;
+  margin: auto;
+  display: block;
+  background-color: white;
+}
